@@ -1,15 +1,24 @@
 // import { useRouter } from 'next/router';
+
+import styled from 'styled-components';
+
+const TestStyle = styled.div`
+  h1 {
+    color: red;
+  }
+`;
+
 export default function Post({ post }) {
   // const router = useRouter();
   // if (router.isFallback) {
   //   return <h1>Loading...</h1>;
   // }
   return (
-    <div>
-      <h1>POST(投稿){post.id}</h1>
+    <TestStyle>
+      <h1 className="text-3xl">POST(投稿){post.id}</h1>
       <h2>{post.title}</h2>
       <p>{post.body}</p>
-    </div>
+    </TestStyle>
   );
 }
 
