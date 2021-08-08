@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import Image from 'next/image';
-import Logo from '../public/images/Logo.svg';
+import Logo from '../../src/images/Logo.svg';
 
 const HeaderStyle = styled.header`
   width: 100%;
@@ -10,7 +10,7 @@ const HeaderStyle = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--white);
   .navList {
     display: flex;
     align-items: center;
@@ -19,13 +19,14 @@ const HeaderStyle = styled.header`
 
   .contact {
     padding: 0.8rem 2rem;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 30px;
-    color: #818181;
+    color: var(--primary);
   }
   .navItem {
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
   }
 `;
