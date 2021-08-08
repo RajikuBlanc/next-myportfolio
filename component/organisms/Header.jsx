@@ -44,6 +44,11 @@ export default function Header() {
 
       {/* Nav */}
       <ul className="navList">
+        <li>
+          <Link href="/">
+            <a className="navItem">top</a>
+          </Link>
+        </li>
         {navMenu.map(item => {
           const name = item.name;
           return (

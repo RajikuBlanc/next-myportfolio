@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Header from '../component/organisms/Header';
+import Header from './organisms/Header';
+import Footer from './organisms/Footer';
 import GlobalStyles from '../styles/GlobalStyle';
-import Footer from '../component/organisms/Footer';
 
-export default function Home() {
+export default function Layout({ children }) {
   const title = 'My Portfolio';
   const description = 'My Portfolio';
   return (
@@ -14,20 +14,10 @@ export default function Home() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </Head>
-      {/* GlobalStyles */}
-      <GlobalStyles />
-
-      {/* Header */}
       <Header />
-
-      {/* Contents */}
-      {/* MV */}
-      {/* Profile */}
-      {/* Skill */}
-      {/* Works */}
-      {/* Contact */}
-      {/* Footer */}
+      {children}
       <Footer />
+      <GlobalStyles />
     </div>
   );
 }
