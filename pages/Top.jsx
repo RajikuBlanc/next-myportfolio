@@ -1,13 +1,20 @@
+import MvSection from '../component/sections/top/MvSection';
+import ProfileSection from '../component/sections/top/ProfileSection';
+import SkillSection from '../component/sections/top/SkillSection';
+import WorksSection from '../component/sections/top/WorksSection';
+import ContactSection from '../component/organisms/ContactSection';
+
 export default function Top() {
   return (
     <div>
-      {/* Contents */}
-      {/* MV */}
-      <h1>Top Page</h1>
-      {/* Profile */}
-      {/* Skill */}
-      {/* Works */}
-      {/* Contact */}
+      {/* MV Section */}
+      <MvSection />
+      {/* Profile Section*/}
+      <ProfileSection />
+      {/* Skill Section*/}
+      <SkillSection />
+      {/* Works Section*/}
+      <WorksSection />
     </div>
   );
 }
