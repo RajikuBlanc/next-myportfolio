@@ -9,7 +9,9 @@ const GlobalStyles = createGlobalStyle`
   :root{
     --primary: #818181;
     --white : #ffffff;
+    --white-979:#979797;
     --black: #000000;
+
   }
   html{
     font-size: 10px;
