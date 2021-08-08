@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Header from '../component/Header';
 
-export default function About() {
-  const title = 'About';
+export default function Works() {
+  const title = 'Works';
   return (
     <div>
       <Head>
