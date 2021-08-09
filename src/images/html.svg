@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_100" data-name="長方形 100" width="40" height="40" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_14" data-name="マスクグループ 14" clip-path="url(#clip-path)">
+    <g id="html-icon" transform="translate(2.342)">
+      <path id="パス_104" data-name="パス 104" d="M9.576,39.16,6.4,3.5H41.333L38.149,39.154,23.843,43.121Z" transform="translate(-6.396 -3.5)" fill="#e44f26"/>
+      <path id="パス_105" data-name="パス 105" d="M28,40.78l11.561-3.205L42.28,7.107H28Z" transform="translate(-10.532 -4.19)" fill="#f1662a"/>
+      <path id="パス_106" data-name="パス 106" d="M25.4,21.367H19.616l-.4-4.479H25.4V12.514H14.438l.1,1.174L15.616,25.74H25.4Z" transform="translate(-7.935 -5.225)" fill="#ebebeb"/>
+      <path id="パス_107" data-name="パス 107" d="M25.729,36.374l-.02.006-4.871-1.315-.311-3.488H16.137l.613,6.866,8.96,2.488.02-.006Z" transform="translate(-8.261 -8.874)" fill="#ebebeb"/>
+      <path id="パス_108" data-name="パス 108" d="M27.981,23.462v4.374h5.386l-.507,5.673-4.879,1.316v4.551l8.967-2.486.065-.739L38.04,24.637l.108-1.174H27.981Z" transform="translate(-10.528 -7.321)" fill="#fff"/>
+      <path id="パス_109" data-name="パス 109" d="M27.981,12.514v4.374H38.545l.088-.982.2-2.217.1-1.174Z" transform="translate(-10.528 -5.225)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

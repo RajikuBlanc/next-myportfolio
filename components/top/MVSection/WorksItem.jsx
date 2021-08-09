@@ -23,7 +23,6 @@ const WorksItemStyle = styled.li`
   }
   .swiper-slide {
     height: 243px;
-    width: 100%;
     border: 1px solid #000;
     display: flex;
     justify-content: center;

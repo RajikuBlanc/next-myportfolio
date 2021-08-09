@@ -18,7 +18,7 @@ export default function MoreButton({ link = '/' }) {
   return (
     <MoreButtonStyle>
       <Link href={link}>
-        <a>MORE</a>
+        <a className="moreButton">MORE</a>
       </Link>
     </MoreButtonStyle>
   );
