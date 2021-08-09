@@ -43,7 +43,18 @@ const GlobalStyles = createGlobalStyle`
     width: 90%;
     margin: 0 auto;
   }
-
+  .content {
+    width: 100%;
+    padding: 0 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border: 3px solid var(--white);
+    background-color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export default GlobalStyles;

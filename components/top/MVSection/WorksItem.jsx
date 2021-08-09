@@ -1,5 +1,9 @@
 import styled from 'styled-components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 import MoreButton from '../../atoms/MoreButton';
+
+SwiperCore.use([Autoplay]);
 
 const WorksItemStyle = styled.li`
   width: 30%;
@@ -12,26 +16,18 @@ const WorksItemStyle = styled.li`
     letter-spacing: 0.2em;
     margin-bottom: 1rem;
   }
-  .content {
-    width: 100%;
-    padding: 0 1.5rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    border: 3px solid var(--white);
-    background-color: var(--primary);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .swiper-container {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    z-index: 1;
   }
-  .swiper_container {
+  .swiper-slide {
+    height: 243px;
+    width: 100%;
+    border: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 243px;
-    border: 1px solid var(--white);
-    margin-bottom: 1.5rem;
   }
 `;
 
@@ -42,7 +38,18 @@ export default function WorksItem() {
       <h3>{title}</h3>
       {/* Swiper */}
       <div className="content">
-        <div className="swiper_container">swiper_container</div>
+        <Swiper
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 7000,
+            disableOnInteraction: false
+          }}
+        >
+          <SwiperSlide>slide1</SwiperSlide>
+          <SwiperSlide>slide2</SwiperSlide>
+          <SwiperSlide>slide3</SwiperSlide>
+        </Swiper>
         {/* More Button */}
         <MoreButton link="/works" />
       </div>
