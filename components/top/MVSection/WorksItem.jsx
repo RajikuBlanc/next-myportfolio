@@ -18,6 +18,7 @@ const WorksItemStyle = styled.li`
   }
   .swiper-container {
     max-width: 100%;
+    min-width: 100%;
     margin-bottom: 2rem;
     z-index: 1;
   }

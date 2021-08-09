@@ -25,6 +25,10 @@ const SkillItemStyle = styled.li`
   .skill__item {
     cursor: pointer;
     width: 30%;
+    transition: all 0.3s;
+  }
+  .skill__item:hover {
+    transform: translateY(-5px);
   }
 `;
 

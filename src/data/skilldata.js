@@ -10,6 +10,8 @@ import django from '../images/skillicon/django.svg';
 import xd from '../images/skillicon/xd.svg';
 import git from '../images/skillicon/git.svg';
 import slack from '../images/skillicon/slack.svg';
+import laravel from '../images/skillicon/laravel.svg';
+import mysql from '../images/skillicon/mysql.svg';
 
 const skills = [
   {
@@ -83,6 +85,18 @@ const skills = [
     name: 'slack',
     color: '#FFFFFF',
     img: slack
+  },
+  {
+    id: 13,
+    name: 'laravel',
+    color: '#EF533F',
+    img: laravel
+  },
+  {
+    id: 14,
+    name: 'mysql',
+    color: '#EF533F',
+    img: mysql
   }
 ];
 

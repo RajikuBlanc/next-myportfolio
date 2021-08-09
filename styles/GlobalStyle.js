@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --primary: #818181;
     --white : #ffffff;
     --white-979:#979797;
+    --white-beb:#bebebe;
     --black: #000000;
 
   }
@@ -51,7 +52,7 @@ const GlobalStyles = createGlobalStyle`
     padding-top: 3rem;
     padding-bottom: 2rem;
     border: 3px solid var(--white);
-    background-color: var(--primary);
+    background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
     display: flex;
     flex-direction: column;

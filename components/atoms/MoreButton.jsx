@@ -11,6 +11,11 @@ const MoreButtonStyle = styled.div`
     font-size: 1.2rem;
     background-color: var(--white-979);
     border-radius: 5px;
+    transition: all 0.3s;
+  }
+  a:hover {
+    padding: 0 6rem;
+    background-color: var(--white-beb);
   }
 `;
 
