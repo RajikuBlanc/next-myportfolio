@@ -14,20 +14,28 @@ const HeaderStyle = styled.header`
   .navList {
     display: flex;
     align-items: center;
-    gap: 30px;
   }
 
-  .contact {
-    padding: 0.8rem 2rem;
-    background-color: var(--white);
-    border-radius: 30px;
-    color: var(--primary);
-  }
   .navItem {
     font-size: 1.5rem;
     letter-spacing: 0.1em;
     font-weight: bold;
     text-transform: uppercase;
+    transition: all 0.5s;
+    padding: 0.5rem 2rem;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  .contact {
+    padding: 0.8rem 2rem;
+    background-color: var(--white);
+    border-radius: 30px;
+    color: var(--primary);
+    &:hover {
+      color: var(--black);
+      background-color: var(--white);
+    }
   }
 `;
 
