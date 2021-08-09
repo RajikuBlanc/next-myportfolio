@@ -23,7 +23,7 @@ export default function Mvsection() {
   return (
     <MvSectionStyle>
       <div className="container">
-        <SectionTitle title="portfolio" />
+        <SectionTitle title="my portfolio" />
         <div className="portfolio__box">
           <ul className="portfolio__list">
             <WorksItem />

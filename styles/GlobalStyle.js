@@ -46,6 +46,7 @@ const GlobalStyles = createGlobalStyle`
   .content {
     width: 100%;
     min-height: 350px;
+    max-height: 350px;
     padding: 0 1.5rem;
     padding-top: 3rem;
     padding-bottom: 2rem;

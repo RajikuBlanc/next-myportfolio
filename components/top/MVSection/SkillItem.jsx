@@ -15,10 +15,16 @@ const SkillItemStyle = styled.li`
     margin-bottom: 1rem;
   }
   .skill__list {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 0;
+    margin-bottom: 2rem;
   }
   .skill__item {
     cursor: pointer;
+    width: 30%;
   }
 `;
 
@@ -31,12 +37,14 @@ export default function SkillItem() {
         {/* skill list */}
         <ul className="skill__list">
           {/* skill item */}
-          {Skills.map(skill => {
-            return (
-              <li className="skill__item" key={skill.id}>
-                <SkillIcon img={skill.img} name={skill.name} link={skill.link} />
-              </li>
-            );
+          {Skills.map((skill, index) => {
+            if (index < 12) {
+              return (
+                <li className="skill__item" key={skill.id}>
+                  <SkillIcon img={skill.img} name={skill.name} />
+                </li>
+              );
+            }
           })}
         </ul>
         {/* More Button */}
