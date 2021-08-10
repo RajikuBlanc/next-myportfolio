@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionTitleStyle = styled.h2`
+const SectionTitle_h2 = styled.h2`
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
@@ -8,5 +8,5 @@ const SectionTitleStyle = styled.h2`
   margin-bottom: 1rem;
 `;
 export default function SectionTitle({ title = 'section title' }) {
-  return <SectionTitleStyle>{title}</SectionTitleStyle>;
+  return <SectionTitle_h2>{title}</SectionTitle_h2>;
 }

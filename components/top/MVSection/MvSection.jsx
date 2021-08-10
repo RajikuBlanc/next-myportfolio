@@ -4,34 +4,33 @@ import WorksItem from './WorksItem';
 import SkillItem from './SkillItem';
 import AboutItem from './AboutItem';
 
-const MvSectionStyle = styled.div`
-  .container {
-    margin-top: 2rem;
-  }
-  .portfolio__list {
-    width: 100%;
-    border: 2px solid var(--white);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 5rem 10%;
-    display: flex;
-    justify-content: space-between;
-  }
-`;
-
+// --------------- Function ---------------
 export default function Mvsection() {
   return (
-    <MvSectionStyle>
+    <Mv_section>
       <div className="container">
         <SectionTitle title="my portfolio" />
-        <div className="portfolio__box">
-          <ul className="portfolio__list">
-            <WorksItem />
-            <AboutItem />
-            <SkillItem />
-          </ul>
-        </div>
+        <List_ul>
+          <WorksItem />
+          <AboutItem />
+          <SkillItem />
+        </List_ul>
       </div>
-    </MvSectionStyle>
+    </Mv_section>
   );
 }
+// --------------- Style ---------------
+const Mv_section = styled.section`
+  padding-top: 2rem;
+  margin-bottom: 10rem;
+`;
+
+const List_ul = styled.ul`
+  width: 100%;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5rem 10%;
+  display: flex;
+  justify-content: space-between;
+`;

@@ -1,4 +1,4 @@
-import ProfileSection from '../components/top/ProfileSection';
+import ProfileSection from '../components/top/ProfileSection/ProfileSection';
 import SkillSection from '../components/top/SkillSection';
 import WorksSection from '../components/top/WorksSection';
 import Mvsection from '../components/top/MVSection/MvSection';
