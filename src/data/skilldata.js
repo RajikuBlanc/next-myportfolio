@@ -59,7 +59,7 @@ const skills = [
   {
     id: 7,
     name: 'wordpress',
-    color: '#1B72B6',
+    color: '#218DBE',
     img: wordpress,
     level: '70%'
   },

@@ -2,9 +2,34 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import MoreButton from '../atoms/MoreButton';
-
+import Works from '../../src/data/worksdata';
 SwiperCore.use([Autoplay]);
 
+export default function WorksItem() {
+  const title = 'Works';
+  return (
+    <WorksItemStyle>
+      <h3>{title}</h3>
+      {/* Swiper */}
+      <div className="content">
+        <Swiper
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 7000,
+            disableOnInteraction: false
+          }}
+        >
+          {Works.map(work => {
+            return <SwiperSlide key={work.id}>{work.title}</SwiperSlide>;
+          })}
+        </Swiper>
+        {/* More Button */}
+        <MoreButton link="/works" />
+      </div>
+    </WorksItemStyle>
+  );
+}
 const WorksItemStyle = styled.li`
   width: 30%;
   display: flex;
@@ -24,35 +49,10 @@ const WorksItemStyle = styled.li`
   }
   .swiper-slide {
     height: 243px;
-    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 `;
-
-export default function WorksItem() {
-  const title = 'Works';
-  return (
-    <WorksItemStyle>
-      <h3>{title}</h3>
-      {/* Swiper */}
-      <div className="content">
-        <Swiper
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 7000,
-            disableOnInteraction: false
-          }}
-        >
-          <SwiperSlide>slide1</SwiperSlide>
-          <SwiperSlide>slide2</SwiperSlide>
-          <SwiperSlide>slide3</SwiperSlide>
-        </Swiper>
-        {/* More Button */}
-        <MoreButton link="/works" />
-      </div>
-    </WorksItemStyle>
-  );
-}

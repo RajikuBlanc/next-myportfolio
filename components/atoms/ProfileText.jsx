@@ -14,10 +14,10 @@ const ProfileText_div = styled.div``;
 const Headding_p = styled.p`
   margin-bottom: 0.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 `;
 const Description_p = styled.p`
   white-space: pre;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 `;

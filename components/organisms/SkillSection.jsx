@@ -27,6 +27,7 @@ export default function SkillSection() {
 }
 
 const Skill_section = styled.section`
+  margin-bottom: 10rem;
   .container.small {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
