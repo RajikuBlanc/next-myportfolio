@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import MoreButton from '../atoms/MoreButton';
 import Works from '../../src/data/worksdata';
+import WorksItem from './WorksItem';
 SwiperCore.use([Autoplay]);
 
-export default function WorksItem() {
+export default function WorksBox() {
   const title = 'Works';
   return (
     <WorksItemStyle>
@@ -21,7 +22,11 @@ export default function WorksItem() {
           }}
         >
           {Works.map(work => {
-            return <SwiperSlide key={work.id}>{work.title}</SwiperSlide>;
+            return (
+              <SwiperSlide key={work.id}>
+                <WorksItem title={work.title} />
+              </SwiperSlide>
+            );
           })}
         </Swiper>
         {/* More Button */}
@@ -49,10 +54,5 @@ const WorksItemStyle = styled.li`
   }
   .swiper-slide {
     height: 243px;
-    background-color: #fff;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 `;

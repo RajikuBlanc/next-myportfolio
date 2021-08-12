@@ -24,6 +24,7 @@ const SkillItem_a = styled.a`
   cursor: pointer;
   margin-bottom: 1rem;
   position: relative;
+  transition: all 0.3s;
   &::after {
     content: '';
     position: absolute;
@@ -32,6 +33,10 @@ const SkillItem_a = styled.a`
     height: 10px;
     width: ${props => props.width};
     background-color: ${props => props.color};
+  }
+  &:hover {
+    transition: all 0.3s;
+    transform: translateY(-10px);
   }
   img {
     width: 64px;

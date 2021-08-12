@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import Works from '../../src/data/worksdata';
+import WorksItem from '../molecules/WorksItem';
+import ViewMoreButton from '../atoms/ViewMoreButton';
 SwiperCore.use([Autoplay]);
 
 export default function WorksSection() {
@@ -15,30 +17,30 @@ export default function WorksSection() {
         spaceBetween={30}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 10000,
           disableOnInteraction: false
         }}
       >
         {Works.map(work => {
           return (
             <SwiperSlide key={work.id} className="swiper_slide">
-              {work.title}
+              <WorksItem title={work.title} />
             </SwiperSlide>
           );
         })}
       </Swiper>
+      <ViewMoreButton link="/works" />
     </Works_section>
   );
 }
 
 const Works_section = styled.section`
   margin-bottom: 10rem;
+  .swiper-container {
+    margin-bottom: 3rem;
+  }
   .swiper_slide {
     width: 250px;
     height: 350px;
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 `;
