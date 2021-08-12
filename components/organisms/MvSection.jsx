@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import SectionTitle from '../../atoms/SectionTitle';
-import WorksItem from './WorksItem';
-import SkillItem from './SkillItem';
-import AboutItem from './AboutItem';
+import SectionTitle from '../atoms/SectionTitle';
+import WorksBox from '../molecules/WorksBox';
+import SkillBox from '../molecules/SkillBox';
+import AboutBox from '../molecules/AboutBox';
 
 // --------------- Function ---------------
 export default function Mvsection() {
@@ -11,9 +11,9 @@ export default function Mvsection() {
       <div className="container">
         <SectionTitle title="my portfolio" />
         <List_ul>
-          <WorksItem />
-          <AboutItem />
-          <SkillItem />
+          <WorksBox />
+          <AboutBox />
+          <SkillBox />
         </List_ul>
       </div>
     </Mv_section>

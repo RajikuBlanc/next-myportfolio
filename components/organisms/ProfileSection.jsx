@@ -1,7 +1,7 @@
-import SectionTitle from '../../atoms/SectionTitle';
-import ProfileText from './ProfileText';
+import SectionTitle from '../atoms/SectionTitle';
+import ProfileText from '../atoms/ProfileText';
 import styled from 'styled-components';
-import Ptext from '../../atoms/Ptext';
+import Ptext from '../atoms/Ptext';
 
 export default function ProfileSection() {
   return (

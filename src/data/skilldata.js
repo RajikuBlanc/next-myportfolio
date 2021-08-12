@@ -16,87 +16,101 @@ import mysql from '../images/skillicon/mysql.svg';
 const skills = [
   {
     id: 1,
-    name: 'html',
+    name: 'html5',
     color: '#E44F26',
-    img: html
+    img: html,
+    level: '80%'
   },
   {
     id: 2,
-    name: 'css',
+    name: 'css3',
     color: '#1B72B6',
-    img: css
+    img: css,
+    level: '80%'
   },
   {
     id: 3,
     name: 'scss',
     color: '#CD6799',
-    img: scss
+    img: scss,
+    level: '80%'
   },
   {
     id: 4,
     name: 'javascript',
     color: '#F7DF1E',
-    img: javascript
+    img: javascript,
+    level: '30%'
   },
   {
     id: 5,
     name: 'react',
     color: '#61DAFB',
-    img: react
+    img: react,
+    level: '30%'
   },
   {
     id: 6,
     name: 'nextjs',
-    color: '#1B72B6',
-    img: nextjs
+    color: '#000000',
+    img: nextjs,
+    level: '30%'
   },
   {
     id: 7,
     name: 'wordpress',
     color: '#1B72B6',
-    img: wordpress
+    img: wordpress,
+    level: '70%'
   },
   {
     id: 8,
     name: 'php',
     color: '#6280B6',
-    img: php
+    img: php,
+    level: '60%'
   },
   {
     id: 9,
     name: 'django',
     color: '#44B78B',
-    img: django
+    img: django,
+    level: '40%'
   },
   {
     id: 10,
     name: 'xd',
     color: '#FB3BC1',
-    img: xd
+    img: xd,
+    level: '50%'
   },
   {
     id: 11,
     name: 'git',
     color: '#DD4C35',
-    img: git
+    img: git,
+    level: '50%'
   },
   {
     id: 12,
     name: 'slack',
     color: '#FFFFFF',
-    img: slack
+    img: slack,
+    level: '40%'
   },
   {
     id: 13,
     name: 'laravel',
     color: '#EF533F',
-    img: laravel
+    img: laravel,
+    level: '20%'
   },
   {
     id: 14,
     name: 'mysql',
     color: '#EF533F',
-    img: mysql
+    img: mysql,
+    level: '30%'
   }
 ];
 

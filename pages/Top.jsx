@@ -1,7 +1,7 @@
-import ProfileSection from '../components/top/ProfileSection/ProfileSection';
-import SkillSection from '../components/top/SkillSection';
-import WorksSection from '../components/top/WorksSection';
-import Mvsection from '../components/top/MVSection/MvSection';
+import ProfileSection from '../components/organisms/ProfileSection';
+import SkillSection from '../components/organisms/SkillSection';
+import WorksSection from '../components/organisms/WorksSection';
+import Mvsection from '../components/organisms/MvSection';
 
 export default function Top() {
   return (

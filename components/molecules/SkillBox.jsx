@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import MoreButton from '../../atoms/MoreButton';
-import SkillIcon from './SkillIcon';
-import Skills from '../../../src/data/skilldata';
+import MoreButton from '../atoms/MoreButton';
+import SkillIcon from '../molecules/SkillIcon';
+import Skills from '../../src/data/skilldata';
 
 const SkillItemStyle = styled.li`
   width: 30%;

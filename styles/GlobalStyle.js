@@ -44,6 +44,11 @@ const GlobalStyles = createGlobalStyle`
     width: 90%;
     margin: 0 auto;
   }
+  .container.small {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+  }
   .content {
     width: 100%;
     min-height: 350px;

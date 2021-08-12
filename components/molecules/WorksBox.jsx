@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
-import MoreButton from '../../atoms/MoreButton';
+import MoreButton from '../atoms/MoreButton';
 
 SwiperCore.use([Autoplay]);
 

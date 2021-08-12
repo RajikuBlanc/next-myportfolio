@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import MoreButton from '../../atoms/MoreButton';
+import MoreButton from '../atoms/MoreButton';
 
 const ProfileItemStyle = styled.li`
   width: 30%;
