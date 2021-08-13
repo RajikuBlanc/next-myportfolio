@@ -1,9 +1,9 @@
 import Layout from '../components/layout';
+import AboutSection from '../components/organisms/AboutSection';
 export default function About() {
-  const title = 'About';
   return (
     <Layout>
-      <h1>{title} Page</h1>
+      <AboutSection />
     </Layout>
   );
 }

@@ -25,7 +25,7 @@ const Contact_section = styled.section`
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 5rem 3rem;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
   .sectionTitle {
     text-align: left;
   }

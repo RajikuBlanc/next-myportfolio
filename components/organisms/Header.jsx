@@ -11,6 +11,7 @@ const HeaderStyle = styled.header`
   align-items: center;
   padding: 0 4rem;
   border-bottom: 2px solid var(--white);
+  margin-bottom: 2rem;
   .navList {
     display: flex;
     align-items: center;

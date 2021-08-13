@@ -21,7 +21,6 @@ export default function Mvsection() {
 }
 // --------------- Style ---------------
 const Mv_section = styled.section`
-  padding-top: 2rem;
   margin-bottom: 10rem;
 `;
 
