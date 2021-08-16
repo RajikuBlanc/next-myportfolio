@@ -108,7 +108,7 @@ const skills = [
   {
     id: 14,
     name: 'mysql',
-    color: '#EF533F',
+    color: '#00758F',
     img: mysql,
     level: '30%'
   }

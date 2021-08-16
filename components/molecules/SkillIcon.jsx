@@ -11,10 +11,10 @@ const SkillIconStyle = styled.div`
     width: 40px;
   }
 `;
-export default function SkillIcon({ img, name }) {
+export default function SkillIcon({ id, img, name }) {
   return (
     <SkillIconStyle>
-      <Link href={`/skill/${name}`}>
+      <Link href={`/skill/${id}`}>
         <Image src={img} alt={name}></Image>
       </Link>
     </SkillIconStyle>

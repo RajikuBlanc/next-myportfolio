@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-export default function WorksItem({ title }) {
+export default function WorksItem({ title, id }) {
   return (
     // eslint-disable-next-line @next/next/link-passhref
-    <Link href={`/works/${title}`}>
+    <Link href={`/works/${id}`}>
       <Link_a>{title}</Link_a>
     </Link>
   );

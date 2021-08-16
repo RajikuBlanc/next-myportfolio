@@ -17,14 +17,14 @@ export default function WorksSection() {
         spaceBetween={30}
         loop={true}
         autoplay={{
-          delay: 10000,
+          delay: 6000,
           disableOnInteraction: false
         }}
       >
         {Works.map(work => {
           return (
             <SwiperSlide key={work.id} className="swiper_slide">
-              <WorksItem title={work.title} />
+              <WorksItem title={work.title} id={work.id} />
             </SwiperSlide>
           );
         })}

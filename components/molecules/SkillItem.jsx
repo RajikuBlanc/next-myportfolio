@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
-export default function SkillItem({ img, name, color, level }) {
+export default function SkillItem({ id, img, name, color, level }) {
   return (
     // eslint-disable-next-line @next/next/link-passhref
-    <Link href={`/skill/${name}`}>
+    <Link href={`/skill/${id}`}>
       <SkillItem_a color={color} width={level}>
         <Image src={img} alt={name}></Image>
         <Name_p>{name}</Name_p>
@@ -22,7 +22,6 @@ const SkillItem_a = styled.a`
   height: 150px;
   border: 4px solid ${props => props.color};
   cursor: pointer;
-  margin-bottom: 1rem;
   position: relative;
   transition: all 0.3s;
   &::after {

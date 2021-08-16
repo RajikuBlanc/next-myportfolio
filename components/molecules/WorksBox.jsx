@@ -17,14 +17,14 @@ export default function WorksBox() {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay: 7000,
+            delay: 5000,
             disableOnInteraction: false
           }}
         >
           {Works.map(work => {
             return (
               <SwiperSlide key={work.id}>
-                <WorksItem title={work.title} />
+                <WorksItem title={work.title} id={work.id} />
               </SwiperSlide>
             );
           })}

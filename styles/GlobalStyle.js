@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto Mono';
     color: var(--white);
     letter-spacing: 0.1em;
+    margin-top: 12rem;
   }
   ul,li{
     list-style: none;

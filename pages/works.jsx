@@ -1,20 +1,26 @@
 import Layout from '../components/layout';
 import SectionTitle from '../components/atoms/SectionTitle';
-import Projects from '../src/data/worksdata';
 import Link from 'next/link';
 import styled from 'styled-components';
-
-export default function Works() {
+import works from '../src/data/worksdata';
+export async function getStaticProps() {
+  return {
+    props: {
+      worksData: works
+    }
+  };
+}
+export default function Works({ worksData }) {
   return (
     <Layout>
       <div className="container">
         <SectionTitle title="works" />
         <WorksList_ul>
-          {Projects.map(project => {
+          {worksData.map(work => {
             return (
-              <WorksItem_li key={project.id}>
-                <Link href={`works/${project.link}`}>
-                  <a>{project.title}</a>
+              <WorksItem_li key={work.id}>
+                <Link href={`works/${work.id}`}>
+                  <a>{work.title}</a>
                 </Link>
               </WorksItem_li>
             );

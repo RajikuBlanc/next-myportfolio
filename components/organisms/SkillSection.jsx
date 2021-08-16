@@ -14,7 +14,7 @@ export default function SkillSection() {
             if (index < 12) {
               return (
                 <li key={skill.id}>
-                  <SkillItem img={skill.img} name={skill.name} color={skill.color} level={skill.level} />
+                  <SkillItem id={skill.id} img={skill.img} name={skill.name} color={skill.color} level={skill.level} />
                 </li>
               );
             }

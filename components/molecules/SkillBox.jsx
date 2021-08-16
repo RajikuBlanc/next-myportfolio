@@ -45,7 +45,7 @@ export default function SkillItem() {
             if (index < 12) {
               return (
                 <li className="skill__item" key={skill.id}>
-                  <SkillIcon img={skill.img} name={skill.name} />
+                  <SkillIcon id={skill.id} img={skill.img} name={skill.name} />
                 </li>
               );
             }

@@ -4,17 +4,23 @@ import Image from 'next/image';
 import Logo from '../../src/images/Logo.svg';
 
 const HeaderStyle = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 9999;
   border-bottom: 2px solid var(--white);
   margin-bottom: 2rem;
   .navList {
     display: flex;
     align-items: center;
+    gap: 2rem;
   }
 
   .navItem {
@@ -24,6 +30,7 @@ const HeaderStyle = styled.header`
     text-transform: uppercase;
     transition: all 0.5s;
     padding: 0.5rem 2rem;
+    border-radius: 5px;
     &:hover {
       background-color: rgba(255, 255, 255, 0.3);
     }
