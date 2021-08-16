@@ -28,7 +28,7 @@ const FormCard_li = styled.li`
     background-color: var(--white);
     left: -100%;
     bottom: 0;
-    transition: all 0.3s;
+    transition: all 0.7s;
   }
   &:hover {
     &::after {

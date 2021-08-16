@@ -13,7 +13,7 @@ const HeaderStyle = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--primary);
   z-index: 9999;
   border-bottom: 2px solid var(--white);
   margin-bottom: 2rem;

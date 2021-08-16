@@ -1,7 +1,6 @@
 import SectionTitle from '../atoms/SectionTitle';
 import ProfileText from '../atoms/ProfileText';
 import styled from 'styled-components';
-import Ptext from '../atoms/Ptext';
 
 export default function ProfileSection() {
   return (
@@ -10,7 +9,7 @@ export default function ProfileSection() {
         <SectionTitle title="profile" />
         <List_ul>
           <Item_li>
-            <ProfileText headding="名前:" text="本馬 遼太郎" />
+            <ProfileText headding="名前:" text="本馬 遼太郎(ほんま りょうたろう)" />
             <ProfileText headding="出身:" text="大阪府(在住)" />
             <ProfileText
               headding="自己紹介:"

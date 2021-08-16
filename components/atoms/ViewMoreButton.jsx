@@ -17,5 +17,9 @@ const ViewMoreButton_div = styled.div`
   a {
     font-size: 3rem;
     font-weight: bold;
+    transition: all 0.5s;
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
   }
 `;

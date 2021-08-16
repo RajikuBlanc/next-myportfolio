@@ -1,8 +1,8 @@
-import Layout from '../components/layout';
 import SectionTitle from '../components/atoms/SectionTitle';
 import Link from 'next/link';
 import styled from 'styled-components';
 import works from '../src/data/worksdata';
+import Layout from '../components/layout';
 export async function getStaticProps() {
   return {
     props: {
@@ -10,6 +10,7 @@ export async function getStaticProps() {
     }
   };
 }
+
 export default function Works({ worksData }) {
   return (
     <Layout>
