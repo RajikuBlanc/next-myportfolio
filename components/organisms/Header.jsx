@@ -6,6 +6,7 @@ import { Medias } from '../../styles/Media';
 import Burger from '../molecules/Burger';
 import { useState } from 'react';
 import Menu from '../molecules/Menu';
+import githubIcon from '../../src/images/icon/github-icon.svg';
 
 export default function Header() {
   const navMenu = [{ name: 'about' }, { name: 'works' }, { name: 'skill' }, { name: 'contact' }];
@@ -24,6 +25,11 @@ export default function Header() {
         <li>
           <Link href="/">
             <a className="navItem">top</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://github.com/RajikuBlanc" target="_blank">
+            <a className="navItem">github</a>
           </Link>
         </li>
         {navMenu.map(item => {
@@ -59,6 +65,9 @@ const HeaderStyle = styled.header`
   z-index: 9999;
   border-bottom: 2px solid var(--white);
   margin-bottom: 2rem;
+  ${Medias.tab} {
+    height: 70px;
+  }
 
   .navItem {
     font-size: 1.5rem;
@@ -66,7 +75,7 @@ const HeaderStyle = styled.header`
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.5s;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     &:hover {
       background-color: rgba(255, 255, 255, 0.3);
@@ -87,7 +96,7 @@ const HeaderStyle = styled.header`
 const NavList_ul = styled.ul`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   ${Medias.tab} {
     display: none;
   }

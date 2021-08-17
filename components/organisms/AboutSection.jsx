@@ -61,11 +61,20 @@ const List_ul = styled.ul`
     gap: 8rem;
     padding-left: 4rem;
   }
+  ${Medias.sp} {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding-left: 2rem;
+  }
 `;
 const Item_li = styled.li`
   width: 50%;
   padding-right: 4rem;
   ${Medias.tab} {
     width: 100%;
+  }
+  ${Medias.sp} {
+    padding-right: 2rem;
   }
 `;

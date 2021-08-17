@@ -10,7 +10,7 @@ export default function Burger({ open, setOpen }) {
     </Burger_div>
   );
 }
-// propTypesを使用することでpropsに値を入れ忘れていた時にエラーが出る
+
 Burger.propTypes = {
   open: bool.isRequired,
   setOpen: func.isRequired
@@ -19,7 +19,7 @@ Burger.propTypes = {
 const Burger_div = styled.div`
   display: none;
   position: absolute;
-  top: 3rem;
+  top: 1.5rem;
   right: 3rem;
   flex-direction: column;
   justify-content: space-around;
