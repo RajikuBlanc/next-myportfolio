@@ -23,7 +23,7 @@ export default function ProfileSection() {
           <Item_li>
             <ProfileText
               headding="2019/02~2020/10"
-              text="公務員になるため勉強を始める。毎日5時間以上勉強し筆記試験、面接ともに合格するが内定を頂けず、公務員を諦める。"
+              text="公務員になるため勉強を始める。毎日5時間以上勉強し筆記試験、面接ともに合格するが内定を頂くことはできませんでした。"
             />
             <ProfileText
               headding="2020/10~"
@@ -33,7 +33,11 @@ export default function ProfileSection() {
               headding="2020/11~"
               text="Djangoを触り始め、フロントエンドについて学習するようになる。Webアプリケーションを自作し、運用したいと考え始める。フロントエンドを学習するにつれ、Web制作に興味を持つ。"
             />
-            <ProfileText headding="2021/03~ 現在" text="web制作会社にてインターンをしながら就職活動中です。" />
+            <ProfileText headding="2021/03~" text="web制作会社にてインターンをしながら就職活動を始める" />
+            <ProfileText
+              headding="2021/07~ 現在"
+              text="web制作の実務を経験し、自分がやりたいことはweb制作ではなくweb開発であることに気づく。モダンなフロントエンドの技術を学びたいと思い現在はReactとNext.jsについて学習しています。"
+            />
           </Item_li>
         </List_ul>
       </div>

@@ -15,7 +15,7 @@ export default function WorksSection() {
         <SectionTitle title="works" />
         <Swiper spaceBetween={30} centeredSlides={true} freeMode={true}>
           {Works.map(work => {
-            if (work.id <= 3) {
+            if (work.id <= 5) {
               return (
                 <SwiperSlide key={work.id}>
                   <WorksItem title={work.title} id={work.id} />

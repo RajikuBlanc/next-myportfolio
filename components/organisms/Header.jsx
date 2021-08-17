@@ -2,6 +2,48 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Logo from '../../src/images/Logo.svg';
+import { Medias } from '../../styles/Media';
+import Burger from '../molecules/Burger';
+import { useState } from 'react';
+import Menu from '../molecules/Menu';
+
+export default function Header() {
+  const navMenu = [{ name: 'about' }, { name: 'works' }, { name: 'skill' }, { name: 'contact' }];
+  const [open, setOpen] = useState();
+  return (
+    <HeaderStyle>
+      {/* Logo */}
+      <Link href="/">
+        <a>
+          <Image src={Logo} alt="Logo"></Image>
+        </a>
+      </Link>
+
+      {/* Nav */}
+      <NavList_ul>
+        <li>
+          <Link href="/">
+            <a className="navItem">top</a>
+          </Link>
+        </li>
+        {navMenu.map(item => {
+          const name = item.name;
+          return (
+            <li key={name}>
+              <Link href={`/${name}`}>
+                <a className={`navItem ${name}`}>{name}</a>
+              </Link>
+            </li>
+          );
+        })}
+      </NavList_ul>
+      <BurgerButton_div>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
+      </BurgerButton_div>
+    </HeaderStyle>
+  );
+}
 
 const HeaderStyle = styled.header`
   position: fixed;
@@ -17,11 +59,6 @@ const HeaderStyle = styled.header`
   z-index: 9999;
   border-bottom: 2px solid var(--white);
   margin-bottom: 2rem;
-  .navList {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
 
   .navItem {
     font-size: 1.5rem;
@@ -47,35 +84,18 @@ const HeaderStyle = styled.header`
   }
 `;
 
-export default function Header() {
-  const navMenu = [{ name: 'about' }, { name: 'works' }, { name: 'skill' }, { name: 'contact' }];
-  return (
-    <HeaderStyle>
-      {/* Logo */}
-      <Link href="/">
-        <a>
-          <Image src={Logo} alt="Logo"></Image>
-        </a>
-      </Link>
+const NavList_ul = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  ${Medias.tab} {
+    display: none;
+  }
+`;
 
-      {/* Nav */}
-      <ul className="navList">
-        <li>
-          <Link href="/">
-            <a className="navItem">top</a>
-          </Link>
-        </li>
-        {navMenu.map(item => {
-          const name = item.name;
-          return (
-            <li key={name}>
-              <Link href={`/${name}`}>
-                <a className={`navItem ${name}`}>{name}</a>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </HeaderStyle>
-  );
-}
+const BurgerButton_div = styled.div`
+  display: none;
+  ${Medias.tab} {
+    display: block;
+  }
+`;
