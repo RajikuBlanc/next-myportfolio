@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Medias } from '../../styles/Media';
 export default function FormCard({ url, text, img }) {
   return (
     <FormCard_li>
@@ -37,5 +38,8 @@ const FormCard_li = styled.li`
   }
   a {
     font-size: 1.5rem;
+    ${Medias.tab} {
+      font-size: 1.2rem;
+    }
   }
 `;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import FormCard from '../molecules/FormCard';
 import TwitterIcon from '../../src/images/icon/twitter-icon.svg';
 import MailIcon from '../../src/images/icon/mail-icon.svg';
+import { Medias } from '../../styles/Media';
 export default function ContactSection() {
   return (
     <div className="container">
@@ -29,11 +30,19 @@ const Contact_section = styled.section`
   .sectionTitle {
     text-align: left;
   }
+  ${Medias.sp} {
+    padding: 4rem 2rem;
+  }
 `;
 const FormList_ul = styled.ul`
   display: flex;
   justify-content: center;
-  gap: 20%;
+  gap: 10%;
   padding-top: 4rem;
   padding-bottom: 3rem;
+  ${Medias.tab} {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
 `;

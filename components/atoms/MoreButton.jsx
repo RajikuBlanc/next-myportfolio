@@ -1,6 +1,16 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
+export default function MoreButton({ link = '/' }) {
+  return (
+    <MoreButtonStyle>
+      <Link href={link}>
+        <a className="moreButton">MORE</a>
+      </Link>
+    </MoreButtonStyle>
+  );
+}
+
 const MoreButtonStyle = styled.div`
   a {
     display: flex;
@@ -18,13 +28,3 @@ const MoreButtonStyle = styled.div`
     background-color: var(--white-beb);
   }
 `;
-
-export default function MoreButton({ link = '/' }) {
-  return (
-    <MoreButtonStyle>
-      <Link href={link}>
-        <a className="moreButton">MORE</a>
-      </Link>
-    </MoreButtonStyle>
-  );
-}

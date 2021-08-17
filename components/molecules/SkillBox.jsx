@@ -2,41 +2,14 @@ import styled from 'styled-components';
 import MoreButton from '../atoms/MoreButton';
 import SkillIcon from '../molecules/SkillIcon';
 import Skills from '../../src/data/skilldata';
-
-const SkillItemStyle = styled.li`
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    margin-bottom: 1rem;
-  }
-  .skill__list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px 0;
-    margin-bottom: 2rem;
-  }
-  .skill__item {
-    cursor: pointer;
-    width: 30%;
-    transition: all 0.3s;
-  }
-  .skill__item:hover {
-    transform: translateY(-5px);
-  }
-`;
+import BoxTitle from '../atoms/BoxTitle';
+import { Medias } from '../../styles/Media';
 
 export default function SkillItem() {
   const title = 'Skill';
   return (
     <SkillItemStyle>
-      <h3>{title}</h3>
+      <BoxTitle title={title} />
       <div className="content">
         {/* skill list */}
         <ul className="skill__list">
@@ -57,3 +30,47 @@ export default function SkillItem() {
     </SkillItemStyle>
   );
 }
+
+const SkillItemStyle = styled.li`
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ${Medias.tab} {
+    width: 100%;
+  }
+  .content {
+    ${Medias.tab} {
+      min-height: 500px;
+      max-height: 500px;
+    }
+    ${Medias.sp} {
+      min-height: 400px;
+      max-height: 400px;
+    }
+  }
+  .skill__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 0;
+    margin-bottom: 2rem;
+  }
+  .skill__item {
+    cursor: pointer;
+    width: 30%;
+    transition: all 0.3s;
+  }
+  .skill__item:hover {
+    transform: translateY(-5px);
+  }
+  .moreButton {
+    ${Medias.tab} {
+      margin-top: 4rem;
+    }
+    ${Medias.sp} {
+      margin-top: 2rem;
+    }
+  }
+`;

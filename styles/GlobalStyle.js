@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { Medias } from './Media';
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -63,6 +64,11 @@ const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+    ${Medias.tab}{
+      min-height: 400px;
+      max-height: 400px;
+      padding-top: 5rem;
+    }
   }
 `;
 

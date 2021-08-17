@@ -4,13 +4,16 @@ import SwiperCore, { Autoplay } from 'swiper';
 import MoreButton from '../atoms/MoreButton';
 import Works from '../../src/data/worksdata';
 import WorksItem from './WorksItem';
+import { Medias } from '../../styles/Media';
+import BoxTitle from '../atoms/BoxTitle';
+
 SwiperCore.use([Autoplay]);
 
 export default function WorksBox() {
   const title = 'Works';
   return (
     <WorksItemStyle>
-      <h3>{title}</h3>
+      <BoxTitle title={title} />
       {/* Swiper */}
       <div className="content">
         <Swiper
@@ -40,11 +43,16 @@ const WorksItemStyle = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    margin-bottom: 1rem;
+  ${Medias.tab} {
+    width: 100%;
+  }
+  .content {
+    ${Medias.tab} {
+      min-height: 600px;
+    }
+    ${Medias.sp} {
+      min-height: 400px;
+    }
   }
   .swiper-container {
     max-width: 100%;
@@ -54,5 +62,11 @@ const WorksItemStyle = styled.li`
   }
   .swiper-slide {
     height: 243px;
+    ${Medias.tab} {
+      height: 500px;
+    }
+    ${Medias.sp} {
+      height: 300px;
+    }
   }
 `;

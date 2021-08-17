@@ -2,15 +2,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
-
-const SkillIconStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 40px;
-  }
-`;
+import { Medias } from '../../styles/Media';
 export default function SkillIcon({ id, img, name }) {
   return (
     <SkillIconStyle>
@@ -20,3 +12,18 @@ export default function SkillIcon({ id, img, name }) {
     </SkillIconStyle>
   );
 }
+
+const SkillIconStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 40px;
+    ${Medias.tab} {
+      width: 60px;
+    }
+    ${Medias.sp} {
+      width: 40px;
+    }
+  }
+`;

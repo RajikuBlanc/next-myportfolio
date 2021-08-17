@@ -17,7 +17,6 @@ const Headding_p = styled.p`
   font-size: 1.5rem;
 `;
 const Description_p = styled.p`
-  white-space: pre;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 `;

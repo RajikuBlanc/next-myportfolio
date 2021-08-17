@@ -3,7 +3,7 @@ import SectionTitle from '../atoms/SectionTitle';
 import WorksBox from '../molecules/WorksBox';
 import SkillBox from '../molecules/SkillBox';
 import AboutBox from '../molecules/AboutBox';
-
+import { Medias } from '../../styles/Media';
 // --------------- Function ---------------
 export default function Mvsection() {
   return (
@@ -22,6 +22,9 @@ export default function Mvsection() {
 // --------------- Style ---------------
 const Mv_section = styled.section`
   margin-bottom: 10rem;
+  ${Medias.tab} {
+    margin-bottom: 5rem;
+  }
 `;
 
 const List_ul = styled.ul`
@@ -32,4 +35,12 @@ const List_ul = styled.ul`
   padding: 5rem 10%;
   display: flex;
   justify-content: space-between;
+  ${Medias.custom(1100)} {
+    padding: 5rem 1.2rem;
+  }
+  ${Medias.tab} {
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem 5%;
+  }
 `;
