@@ -3,6 +3,7 @@ import skillLists from '../../src/data/skilldata';
 import SectionTitle from '../../components/atoms/SectionTitle';
 import SkillDetail from '../../components/molecules/SkillDetail';
 import styled from 'styled-components';
+import { Medias } from '../../styles/Media';
 
 export async function getStaticProps({ params }) {
   const skills = skillLists.filter(skill => skill.id.toString() === params.id);
@@ -38,4 +39,7 @@ const SkillName_section = styled.section`
   padding: 3rem 4rem;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  ${Medias.tab} {
+    padding: 2rem;
+  }
 `;

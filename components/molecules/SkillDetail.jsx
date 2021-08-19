@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { Medias } from '../../styles/Media';
 export default function SkillDetail({ name, img, color, level }) {
   return (
     <SkillDetail_div color={color}>
@@ -29,6 +30,12 @@ const SkillDetail_div = styled.div`
   padding-bottom: 8rem;
   padding-left: 4rem;
   padding-right: 4rem;
+  ${Medias.custom(680)} {
+    padding: 2rem 4rem;
+  }
+  ${Medias.sp} {
+    padding: 2rem 2rem;
+  }
 `;
 
 const Box_div = styled.div`
@@ -37,6 +44,12 @@ const Box_div = styled.div`
   gap: 5rem;
   padding-bottom: 10rem;
   border-bottom: 1px solid var(--white);
+  ${Medias.tab} {
+    padding-bottom: 5rem;
+  }
+  ${Medias.custom(680)} {
+    flex-direction: column;
+  }
 `;
 
 const LeftBox_div = styled.div`
@@ -45,23 +58,39 @@ const LeftBox_div = styled.div`
   justify-content: center;
   img {
     width: 300px;
+    ${Medias.sp} {
+      width: 100px;
+    }
+  }
+  ${Medias.custom(680)} {
+    width: 100%;
   }
 `;
 const RightBox_div = styled.div`
   width: 50%;
+  ${Medias.custom(680)} {
+    width: 100%;
+  }
 `;
 const NameText_p = styled.p`
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.2em;
   font-weight: bold;
   text-align: left;
   margin-bottom: 10rem;
+
+  ${Medias.custom(680)} {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 `;
 
 const LevelText_p = styled(NameText_p)`
   text-align: right;
   margin-bottom: 1rem;
+  font-size: 2rem;
 `;
 const LevelBar_div = styled.div`
   width: 100%;
@@ -93,6 +122,10 @@ const Link_a = styled.a`
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   transition: all 0.5s;
+  ${Medias.custom(680)} {
+    width: 100%;
+    font-size: 1.2rem;
+  }
   &:hover {
     width: 220px;
   }

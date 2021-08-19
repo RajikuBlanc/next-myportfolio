@@ -24,12 +24,14 @@ export default function Header() {
       <NavList_ul>
         <li>
           <Link href="/">
-            <a className="navItem">top</a>
+            <a className="navItem">home</a>
           </Link>
         </li>
         <li>
-          <Link href="https://github.com/RajikuBlanc" target="_blank">
-            <a className="navItem">github</a>
+          <Link href="https://github.com/RajikuBlanc">
+            <a className="navItem" target="_blank">
+              github
+            </a>
           </Link>
         </li>
         {navMenu.map(item => {
@@ -67,6 +69,9 @@ const HeaderStyle = styled.header`
   margin-bottom: 2rem;
   ${Medias.tab} {
     height: 70px;
+  }
+  ${Medias.sp} {
+    padding: 0 2rem;
   }
 
   .navItem {

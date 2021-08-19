@@ -20,7 +20,7 @@ const Burger_div = styled.div`
   display: none;
   position: absolute;
   top: 1.5rem;
-  right: 3rem;
+  right: 4rem;
   flex-direction: column;
   justify-content: space-around;
   width: 3rem;
@@ -32,6 +32,9 @@ const Burger_div = styled.div`
   z-index: 10;
   ${Medias.tab} {
     display: flex;
+  }
+  ${Medias.sp} {
+    right: 2rem;
   }
 
   &:focus {

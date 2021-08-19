@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Medias } from '../../styles/Media';
 
 export default function ProfileText({ headding, text }) {
   return (
@@ -19,4 +20,7 @@ const Headding_p = styled.p`
 const Description_p = styled.p`
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  ${Medias.sp} {
+    text-align: justify;
+  }
 `;

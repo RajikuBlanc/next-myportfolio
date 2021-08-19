@@ -65,7 +65,7 @@ const List_ul = styled.ul`
     flex-direction: column;
     align-items: center;
     gap: 8rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 `;
 const Item_li = styled.li`
@@ -74,7 +74,8 @@ const Item_li = styled.li`
   ${Medias.tab} {
     width: 100%;
   }
+
   ${Medias.sp} {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 `;

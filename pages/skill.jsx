@@ -5,6 +5,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import SkillItem from '../components/molecules/SkillItem';
 import Layout from '../components/layout';
+import { Medias } from '../styles/Media';
 
 export async function getStaticProps() {
   return {
@@ -61,6 +62,9 @@ const ListBox_div = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
   margin-bottom: 5rem;
   border-radius: 10px;
+  ${Medias.sp} {
+    padding: 3rem 3rem;
+  }
 `;
 const Text_p = styled.p`
   font-size: 2.5rem;
@@ -74,6 +78,12 @@ const SkillList_ul = styled.ul`
   justify-content: center;
   gap: 5rem 10rem;
   margin-bottom: 5rem;
+  ${Medias.tab} {
+    gap: 3rem 3rem;
+  }
+  ${Medias.sp} {
+    gap: 2rem 2rem;
+  }
 `;
 const StudySkillList_ul = styled.ul`
   display: flex;
@@ -82,4 +92,10 @@ const StudySkillList_ul = styled.ul`
   gap: 5rem 10rem;
   padding-top: 5rem;
   border-top: 1px solid var(--white);
+  ${Medias.tab} {
+    gap: 3rem 3rem;
+  }
+  ${Medias.sp} {
+    gap: 2rem 2rem;
+  }
 `;

@@ -3,6 +3,7 @@ import SkillItem from '../molecules/SkillItem';
 import Skills from '../../src/data/skilldata';
 import styled from 'styled-components';
 import ViewMoreButton from '../atoms/ViewMoreButton';
+import { Medias } from '../../styles/Media';
 
 export default function SkillSection() {
   return (
@@ -44,6 +45,12 @@ const List_ul = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
+  gap: 8rem;
   border-bottom: 2px solid var(--white);
+  ${Medias.tab} {
+    gap: 3rem 3rem;
+  }
+  ${Medias.sp} {
+    gap: 2rem 2rem;
+  }
 `;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Medias } from '../../styles/Media';
 export default function SkillItem({ id, img, name, color, level }) {
   return (
     // eslint-disable-next-line @next/next/link-passhref
@@ -24,6 +25,10 @@ const SkillItem_a = styled.a`
   cursor: pointer;
   position: relative;
   transition: all 0.3s;
+  ${Medias.tab} {
+    width: 100px;
+    height: 100px;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -32,6 +37,9 @@ const SkillItem_a = styled.a`
     height: 10px;
     width: ${props => props.width};
     background-color: ${props => props.color};
+    ${Medias.tab} {
+      height: 5px;
+    }
   }
   &:hover {
     transition: all 0.3s;
@@ -39,6 +47,9 @@ const SkillItem_a = styled.a`
   }
   img {
     width: 64px;
+    ${Medias.tab} {
+      width: 30px;
+    }
   }
 `;
 
@@ -47,4 +58,7 @@ const Name_p = styled.p`
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  ${Medias.tab} {
+    font-size: 1rem;
+  }
 `;
