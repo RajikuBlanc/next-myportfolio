@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
 
-## Getting Started
+就職活動ように自分の自己紹介サイトと学習を兼ねてポートフォリオサイトを作成しました。
 
-First, run the development server:
+## 開発環境
+### フロントエンド
+- Next.js
+### スタイル
+- styled-components
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### 採用理由
+- SSGを使用してあらかじめ静的ページを作成しておくことでパフォーマンスの向上が得られる
+- 環境構築が簡単
+- デプロイのしやすさ
+- Reactのフレームワークであるため、コンポーネントの使用が可能であるため開発効率の向上
+- react,nextjs共に最近学習を始めたため
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### バックエンド　データベース
+- 使用していません
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## こだわり
+こだわった点はいくつかありますが、特にこだわったのは誰に見てもらうかです。
+今回作成したポートフォリオは就職活動をするため、自分を知ってもらうために作成いたしました。
+そのため、自分の情報はトップの一番上にまとめて配置し、一目で自分の情報を見てもらうことができます。
+また、凝ったアニメーションはあえて実装していません。自分があまり好みではないのも一つの理由ですが、アニメーションが煩わしく思う時があるので今回は実装しませんでした。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+このような自分の紹介をするポートフォリオでは、シングルページのものが多いと思います。ですが、今回はNext.jsの学習も兼ねて作成したため詳細ページや一覧ページを作成いたしました。詳細ページではダイナミックルーティングを使用して、データごとにページを動的に切り替えています。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 苦労したところ
+特に苦労した点は、データの取得です。
+データはapiで取得するのではなく、srcファイルで管理しています。
+srcファイルで管理したことにより、データを取得して表示させる方法が日本語では調べても出てきませんでした。この方法をどの様に調べればいいかわからず、一番苦戦しました。
+2日ほど調べ解決することができました。このように苦戦することで自分の成長につながるのだなと感じました。
