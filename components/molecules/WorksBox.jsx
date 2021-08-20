@@ -6,6 +6,8 @@ import Works from '../../src/data/worksdata';
 import WorksItem from './WorksItem';
 import { Medias } from '../../styles/Media';
 import BoxTitle from '../atoms/BoxTitle';
+import Link from 'next/link';
+import Image from 'next/image';
 
 SwiperCore.use([Autoplay]);
 
@@ -27,7 +29,11 @@ export default function WorksBox() {
           {Works.map(work => {
             return (
               <SwiperSlide key={work.id}>
-                <WorksItem title={work.title} id={work.id} />
+                <Link href={`/works/${work.id}`}>
+                  <Link_a>
+                    <Image src={work.img} alt="画像"></Image>
+                  </Link_a>
+                </Link>
               </SwiperSlide>
             );
           })}
@@ -69,4 +75,7 @@ const WorksItemStyle = styled.li`
       height: 300px;
     }
   }
+`;
+const Link_a = styled.a`
+  cursor: pointer;
 `;

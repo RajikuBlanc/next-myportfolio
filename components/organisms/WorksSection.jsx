@@ -18,7 +18,7 @@ export default function WorksSection() {
             if (work.id <= 5) {
               return (
                 <SwiperSlide key={work.id}>
-                  <WorksItem title={work.title} id={work.id} />
+                  <WorksItem id={work.id} img={work.img} />
                 </SwiperSlide>
               );
             }
@@ -41,6 +41,7 @@ const Works_section = styled.section`
   }
   .swiper-wrapper {
     margin-bottom: 3rem;
+    padding: 1rem 0;
   }
   .swiper-slide {
     min-width: 250px;

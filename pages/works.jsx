@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import works from '../src/data/worksdata';
 import Layout from '../components/layout';
+import Image from 'next/image';
 export async function getStaticProps() {
   return {
     props: {
@@ -21,7 +22,9 @@ export default function Works({ worksData }) {
             return (
               <WorksItem_li key={work.id}>
                 <Link href={`works/${work.id}`}>
-                  <a>{work.title}</a>
+                  <a>
+                    <Image src={work.img} alt="画像"></Image>
+                  </a>
                 </Link>
               </WorksItem_li>
             );
@@ -48,10 +51,11 @@ const WorksList_ul = styled.ul`
 `;
 
 const WorksItem_li = styled.li`
-  min-width: 250px;
+  max-width: 250px;
   height: 350px;
   border: 1px solid #000;
   transition: all 0.3s;
+  overflow: hidden;
   &:hover {
     transform: translateY(-10px);
   }
@@ -59,6 +63,8 @@ const WorksItem_li = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    img {
+      object-fit: cover;
+    }
   }
 `;
