@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
