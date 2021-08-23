@@ -6,10 +6,9 @@ import { Medias } from '../../styles/Media';
 import Burger from '../molecules/Burger';
 import { useState } from 'react';
 import Menu from '../molecules/Menu';
-import githubIcon from '../../src/images/icon/github-icon.svg';
 
 export default function Header() {
-  const navMenu = [{ name: 'about' }, { name: 'works' }, { name: 'skill' }, { name: 'contact' }];
+  // const navMenu = [{ name: 'about' }, { name: 'works' }, { name: 'skill' }, { name: 'contact' }];
   const [open, setOpen] = useState();
   return (
     <HeaderStyle>
@@ -34,7 +33,27 @@ export default function Header() {
             </a>
           </Link>
         </li>
-        {navMenu.map(item => {
+        <li>
+          <Link href="/about">
+            <a className="navItem">about</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/works">
+            <a className="navItem">works</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/skill">
+            <a className="navItem">skill</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a className="navItem contact">contact</a>
+          </Link>
+        </li>
+        {/* {navMenu.map(item => {
           const name = item.name;
           return (
             <li key={name}>
@@ -43,7 +62,7 @@ export default function Header() {
               </Link>
             </li>
           );
-        })}
+        })} */}
       </NavList_ul>
       <BurgerButton_div>
         <Burger open={open} setOpen={setOpen} />
