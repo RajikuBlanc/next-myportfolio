@@ -5,28 +5,30 @@ import SwiperCore, { Autoplay } from 'swiper';
 import Works from '../../src/data/worksdata';
 import WorksItem from '../molecules/WorksItem';
 import ViewMoreButton from '../atoms/ViewMoreButton';
-import { Medias } from '../../styles/Media';
+import Fade from 'react-reveal/Fade';
 SwiperCore.use([Autoplay]);
 
 export default function WorksSection() {
   return (
-    <Works_section>
-      <div className="container">
-        <SectionTitle title="works" />
-        <Swiper spaceBetween={30} centeredSlides={true} freeMode={true}>
-          {Works.map(work => {
-            if (work.id <= 5) {
-              return (
-                <SwiperSlide key={work.id}>
-                  <WorksItem id={work.id} img={work.img} />
-                </SwiperSlide>
-              );
-            }
-          })}
-        </Swiper>
-        <ViewMoreButton link="/works" />
-      </div>
-    </Works_section>
+    <Fade left cascade>
+      <Works_section>
+        <div className="container">
+          <SectionTitle title="works" />
+          <Swiper spaceBetween={30} centeredSlides={true} freeMode={true}>
+            {Works.map(work => {
+              if (work.id <= 5) {
+                return (
+                  <SwiperSlide key={work.id}>
+                    <WorksItem id={work.id} img={work.img} />
+                  </SwiperSlide>
+                );
+              }
+            })}
+          </Swiper>
+          <ViewMoreButton link="/works" />
+        </div>
+      </Works_section>
+    </Fade>
   );
 }
 

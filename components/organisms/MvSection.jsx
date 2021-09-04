@@ -4,19 +4,22 @@ import WorksBox from '../molecules/WorksBox';
 import SkillBox from '../molecules/SkillBox';
 import AboutBox from '../molecules/AboutBox';
 import { Medias } from '../../styles/Media';
+import Fade from 'react-reveal/Fade';
 // --------------- Function ---------------
 export default function Mvsection() {
   return (
-    <Mv_section>
-      <div className="container">
-        <SectionTitle title="my portfolio" />
-        <List_ul>
-          <WorksBox />
-          <AboutBox />
-          <SkillBox />
-        </List_ul>
-      </div>
-    </Mv_section>
+    <Fade left cascade>
+      <Mv_section>
+        <div className="container">
+          <SectionTitle title="my portfolio" />
+          <List_ul>
+            <WorksBox />
+            <AboutBox />
+            <SkillBox />
+          </List_ul>
+        </div>
+      </Mv_section>
+    </Fade>
   );
 }
 // --------------- Style ---------------

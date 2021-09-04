@@ -3,40 +3,43 @@ import ProfileText from '../atoms/ProfileText';
 import styled from 'styled-components';
 import Ptext from '../atoms/Ptext';
 import { Medias } from '../../styles/Media';
+import Fade from 'react-reveal/Fade';
 export default function ProfileSection() {
   return (
-    <Profile_section>
-      <div className="container">
-        <SectionTitle title="profile" />
-        <List_ul>
-          <Item_li>
-            <ProfileText headding="名前:" text="本馬 遼太郎(ほんま りょうたろう)" />
-            <ProfileText headding="出身:" text="大阪府(在住)" />
-            <ProfileText headding="自己紹介:" />
-            <Ptext text="初めまして、本馬です。" />
-            <Ptext text="人に頼られることが好きです。" />
-            <Ptext text="自分のためだけでなく、他の人にも使っていただけるようなアプリ開発を目標としています。" />
-            <Ptext text="まだアプリを開発することはできていませんが、日々人のためになるアプリはないかと考えています。" />
-            <Ptext text="考えるだけでは、開発はできないので、開発するために学習に励んでいます。" />
-          </Item_li>
-          <Item_li>
-            <ProfileText
-              headding="2019/02~2020/10"
-              text="公務員になるため勉強を始める。毎日5時間以上勉強し筆記試験、面接ともに合格するが内定を頂くことはできませんでした。"
-            />
-            <ProfileText
-              headding="2020/10~"
-              text="公務員を諦めるきっかけとなったのが、プログラミングとの出会い。プログラミング学習当初、プログラミング特有の言葉に困惑するが、開発の楽しさを知り、学習意欲が向上し、プログラミングに没頭する。PythonのフレームワークであるDjangoに触れる。"
-            />
-            <ProfileText headding="2020/11~" text="Djangoを触り始め、フロントエンドについて学習するようになる。" />
-            <ProfileText
-              headding="2021/04~ 現在"
-              text="モダンなフロントエンドの技術を学びたいと思い現在はReactとNext.jsについて学習しています。"
-            />
-          </Item_li>
-        </List_ul>
-      </div>
-    </Profile_section>
+    <Fade right cascade>
+      <Profile_section>
+        <div className="container">
+          <SectionTitle title="profile" />
+          <List_ul>
+            <Item_li>
+              <ProfileText headding="名前:" text="本馬 遼太郎(ほんま りょうたろう)" />
+              <ProfileText headding="出身:" text="大阪府(在住)" />
+              <ProfileText headding="自己紹介:" />
+              <Ptext text="初めまして、本馬です。" />
+              <Ptext text="人に頼られることが好きです。" />
+              <Ptext text="自分のためだけでなく、他の人にも使っていただけるようなアプリ開発を目標としています。" />
+              <Ptext text="まだアプリを開発することはできていませんが、日々人のためになるアプリはないかと考えています。" />
+              <Ptext text="考えるだけでは、開発はできないので、開発するために学習に励んでいます。" />
+            </Item_li>
+            <Item_li>
+              <ProfileText
+                headding="2019/02~2020/10"
+                text="公務員になるため勉強を始める。毎日5時間以上勉強し筆記試験、面接ともに合格するが内定を頂くことはできませんでした。"
+              />
+              <ProfileText
+                headding="2020/10~"
+                text="公務員を諦めるきっかけとなったのが、プログラミングとの出会い。プログラミング学習当初、プログラミング特有の言葉に困惑するが、開発の楽しさを知り、学習意欲が向上し、プログラミングに没頭する。PythonのフレームワークであるDjangoに触れる。"
+              />
+              <ProfileText headding="2020/11~" text="Djangoを触り始め、フロントエンドについて学習するようになる。" />
+              <ProfileText
+                headding="2021/04~ 現在"
+                text="モダンなフロントエンドの技術を学びたいと思い現在はReactとNext.jsについて学習しています。"
+              />
+            </Item_li>
+          </List_ul>
+        </div>
+      </Profile_section>
+    </Fade>
   );
 }
 

@@ -4,26 +4,34 @@ import Skills from '../../src/data/skilldata';
 import styled from 'styled-components';
 import ViewMoreButton from '../atoms/ViewMoreButton';
 import { Medias } from '../../styles/Media';
-
+import Fade from 'react-reveal/Fade';
 export default function SkillSection() {
   return (
-    <Skill_section>
-      <SectionTitle title="skill" />
-      <div className="container small">
-        <List_ul>
-          {Skills.map((skill, index) => {
-            if (index < 12) {
-              return (
-                <li key={skill.id}>
-                  <SkillItem id={skill.id} img={skill.img} name={skill.name} color={skill.color} level={skill.level} />
-                </li>
-              );
-            }
-          })}
-        </List_ul>
-        <ViewMoreButton link="skill" />
-      </div>
-    </Skill_section>
+    <Fade bottom cascade>
+      <Skill_section>
+        <SectionTitle title="skill" />
+        <div className="container small">
+          <List_ul>
+            {Skills.map((skill, index) => {
+              if (index < 12) {
+                return (
+                  <li key={skill.id}>
+                    <SkillItem
+                      id={skill.id}
+                      img={skill.img}
+                      name={skill.name}
+                      color={skill.color}
+                      level={skill.level}
+                    />
+                  </li>
+                );
+              }
+            })}
+          </List_ul>
+          <ViewMoreButton link="skill" />
+        </div>
+      </Skill_section>
+    </Fade>
   );
 }
 

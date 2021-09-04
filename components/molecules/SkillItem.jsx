@@ -1,16 +1,19 @@
+/* eslint-disable @next/next/link-passhref */
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Medias } from '../../styles/Media';
+import Slide from 'react-reveal/Slide';
 export default function SkillItem({ id, img, name, color, level }) {
   return (
-    // eslint-disable-next-line @next/next/link-passhref
-    <Link href={`/skill/${id}`}>
-      <SkillItem_a color={color} width={level}>
-        <Image src={img} alt={name}></Image>
-        <Name_p>{name}</Name_p>
-      </SkillItem_a>
-    </Link>
+    <Slide bottom>
+      <Link href={`/skill/${id}`}>
+        <SkillItem_a color={color} width={level}>
+          <Image src={img} alt={name}></Image>
+          <Name_p>{name}</Name_p>
+        </SkillItem_a>
+      </Link>
+    </Slide>
   );
 }
 

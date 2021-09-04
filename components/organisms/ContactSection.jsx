@@ -4,21 +4,24 @@ import FormCard from '../molecules/FormCard';
 import TwitterIcon from '../../src/images/icon/twitter-icon.svg';
 import MailIcon from '../../src/images/icon/mail-icon.svg';
 import { Medias } from '../../styles/Media';
+import Fade from 'react-reveal/Fade';
 export default function ContactSection() {
   return (
-    <div className="container">
-      <Contact_section>
-        <SectionTitle title="Contact" />
-        <FormList_ul>
-          <FormCard
-            url="https://twitter.com/Whale_ELAHW00"
-            text="ダイレクトメッセージからお願い致します"
-            img={TwitterIcon}
-          />
-          <FormCard url="mailto:rajiku.blanc@gmail.com" text="rajiku.blanc@gmail.com" img={MailIcon} />
-        </FormList_ul>
-      </Contact_section>
-    </div>
+    <Fade top cascade>
+      <div className="container">
+        <Contact_section>
+          <SectionTitle title="Contact" />
+          <FormList_ul>
+            <FormCard
+              url="https://twitter.com/Whale_ELAHW00"
+              text="ダイレクトメッセージからお願い致します"
+              img={TwitterIcon}
+            />
+            <FormCard url="mailto:rajiku.blanc@gmail.com" text="rajiku.blanc@gmail.com" img={MailIcon} />
+          </FormList_ul>
+        </Contact_section>
+      </div>
+    </Fade>
   );
 }
 

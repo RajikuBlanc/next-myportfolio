@@ -28,6 +28,7 @@ const TopButton_div = styled.div`
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 50%;
 `;
 
 export default function Footer() {
