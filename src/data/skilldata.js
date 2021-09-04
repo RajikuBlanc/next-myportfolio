@@ -18,99 +18,85 @@ const skills = [
     id: 1,
     name: 'html5',
     color: '#E44F26',
-    img: html,
-    level: '80%'
+    img: html
   },
   {
     id: 2,
     name: 'css3',
     color: '#1B72B6',
-    img: css,
-    level: '80%'
+    img: css
   },
   {
     id: 3,
     name: 'scss',
     color: '#CD6799',
-    img: scss,
-    level: '80%'
+    img: scss
   },
   {
     id: 4,
     name: 'javascript',
     color: '#F7DF1E',
-    img: javascript,
-    level: '30%'
+    img: javascript
   },
   {
     id: 5,
     name: 'react',
     color: '#61DAFB',
-    img: react,
-    level: '30%'
+    img: react
   },
   {
     id: 6,
     name: 'nextjs',
     color: '#000000',
-    img: nextjs,
-    level: '30%'
+    img: nextjs
   },
   {
     id: 7,
     name: 'wordpress',
     color: '#218DBE',
-    img: wordpress,
-    level: '70%'
+    img: wordpress
   },
   {
     id: 8,
     name: 'php',
     color: '#6280B6',
-    img: php,
-    level: '60%'
+    img: php
   },
   {
     id: 9,
     name: 'django',
     color: '#44B78B',
-    img: django,
-    level: '40%'
+    img: django
   },
   {
     id: 10,
     name: 'xd',
     color: '#FB3BC1',
-    img: xd,
-    level: '50%'
+    img: xd
   },
   {
     id: 11,
     name: 'git',
     color: '#DD4C35',
-    img: git,
-    level: '50%'
+    img: git
   },
   {
     id: 12,
     name: 'slack',
     color: '#FFFFFF',
-    img: slack,
-    level: '40%'
+    img: slack
   },
   {
     id: 13,
     name: 'laravel',
     color: '#EF533F',
-    img: laravel,
-    level: '20%'
+    img: laravel
   },
   {
     id: 14,
     name: 'mysql',
     color: '#00758F',
-    img: mysql,
-    level: '30%'
+    img: mysql
   }
 ];
 

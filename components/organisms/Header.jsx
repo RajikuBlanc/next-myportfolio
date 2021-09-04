@@ -8,7 +8,6 @@ import { useState } from 'react';
 import Menu from '../molecules/Menu';
 
 export default function Header() {
-  // const navMenu = [{ name: 'about' }, { name: 'works' }, { name: 'skill' }, { name: 'contact' }];
   const [open, setOpen] = useState();
   return (
     <HeaderStyle>

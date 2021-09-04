@@ -3,7 +3,6 @@ import ProfileText from '../atoms/ProfileText';
 import styled from 'styled-components';
 import Ptext from '../atoms/Ptext';
 import { Medias } from '../../styles/Media';
-import MoreButton from '../atoms/MoreButton';
 export default function ProfileSection() {
   return (
     <Profile_section>
@@ -29,14 +28,10 @@ export default function ProfileSection() {
               headding="2020/10~"
               text="公務員を諦めるきっかけとなったのが、プログラミングとの出会い。プログラミング学習当初、プログラミング特有の言葉に困惑するが、開発の楽しさを知り、学習意欲が向上し、プログラミングに没頭する。PythonのフレームワークであるDjangoに触れる。"
             />
+            <ProfileText headding="2020/11~" text="Djangoを触り始め、フロントエンドについて学習するようになる。" />
             <ProfileText
-              headding="2020/11~"
-              text="Djangoを触り始め、フロントエンドについて学習するようになる。Webアプリケーションを自作し、運用したいと考え始める。フロントエンドを学習するにつれ、Web制作に興味を持つ。"
-            />
-            <ProfileText headding="2021/03~" text="web制作会社にてインターンをしながら就職活動を始める" />
-            <ProfileText
-              headding="2021/07~ 現在"
-              text="web制作の実務を経験し、自分がやりたいことはweb制作ではなくweb開発であることに気づく。モダンなフロントエンドの技術を学びたいと思い現在はReactとNext.jsについて学習しています。"
+              headding="2021/04~ 現在"
+              text="モダンなフロントエンドの技術を学びたいと思い現在はReactとNext.jsについて学習しています。"
             />
           </Item_li>
         </List_ul>

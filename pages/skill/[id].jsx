@@ -25,7 +25,7 @@ export default function SkillName({ skillData }) {
       <SectionTitle title="skill" />
       <div className="container">
         <SkillName_section>
-          <SkillDetail name={skillData.name} img={skillData.img} color={skillData.color} level={skillData.level} />
+          <SkillDetail name={skillData.name} img={skillData.img} color={skillData.color} />
         </SkillName_section>
       </div>
     </Layout>

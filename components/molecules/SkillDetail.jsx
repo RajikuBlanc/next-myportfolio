@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { Medias } from '../../styles/Media';
-export default function SkillDetail({ name, img, color, level }) {
+export default function SkillDetail({ name, img, color }) {
   return (
     <SkillDetail_div color={color}>
       <Box_div>
@@ -12,8 +12,6 @@ export default function SkillDetail({ name, img, color, level }) {
         </LeftBox_div>
         <RightBox_div>
           <NameText_p>{name}</NameText_p>
-          <LevelText_p>{level}</LevelText_p>
-          <LevelBar_div level={level} color={color}></LevelBar_div>
         </RightBox_div>
       </Box_div>
       <Link href="/skill">

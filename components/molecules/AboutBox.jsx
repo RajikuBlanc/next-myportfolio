@@ -7,8 +7,7 @@ export default function AboutItem() {
   const title = 'About';
   const name = '本馬 遼太郎';
   const text1 = '2020年10月からプログラミングの学習を始める。';
-  const text2 =
-    '現在はweb制作会社にインターン生としてフロントエンドを勉強しながら、実務に参加させていただいております。';
+  const text2 = '現在はフロントエンドを学習しながら、就職活動中です。';
   return (
     <ProfileItemStyle>
       <BoxTitle title={title} />

@@ -8,6 +8,7 @@ import { theme } from '../styles/Theme';
 export default function Layout({ children }) {
   const title = 'My Portfolio';
   const description = 'My Portfolio';
+
   return (
     <ThemeProvider theme={theme}>
       <>

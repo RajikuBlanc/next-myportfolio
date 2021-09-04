@@ -5,7 +5,7 @@ import Mvsection from '../components/organisms/MvSection';
 
 export default function Top() {
   return (
-    <div>
+    <>
       {/* MV Section */}
       <Mvsection />
       {/* Profile Section*/}
@@ -14,6 +14,6 @@ export default function Top() {
       <SkillSection />
       {/* Works Section*/}
       <WorksSection />
-    </div>
+    </>
   );
 }
